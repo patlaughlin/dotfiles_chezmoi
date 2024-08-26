@@ -158,6 +158,9 @@ map <leader>c<Action>(CommentByLineComment)
 map <leader>C <Action>(CommentByBlockComment)
 nmap <leader>qf <Action>(ShowIntentionActions)
 nmap <leader>qs <Action>(QuickJavaDoc)
+
+nmap <leader>qf <Action>(ShowIntentionActions)
+
 nmap <leader>se <Action>(ShowErrorDescription)
 nmap <leader>om <Action>(OverrideMethods)
 nmap <leader>im <Action>(ImplementMethods)
@@ -180,6 +183,7 @@ nmap <leader>dx <Action>(Debug)
 nmap <leader>db <Action>(ToggleLineBreakpoint)
 nmap <leader>de <Action>(EditBreakpoint)
 nmap <leader>dv <Action>(ViewBreakpoints)
+nmap <leader>dr <Action>(Resume)
 
 " build
 " nmap <leader>bb <Action>(BuildMenu)
@@ -317,3 +321,15 @@ nmap <leader>hs <Action>(Flutter.Toolbar.RestartAllAction)
 
 " Map :od to Open Flutter DevTools
 nmap <leader>od <Action>(flutter.devtools.open)
+
+
+" show context actions like the flutter LSP actions modal (wrap with widget, etc)
+nmap <leader>ia <Action>(ShowIntentionActions)
+
+" show docs on a class, method, etc from a library or your own
+nmap <leader>qs <Action>(QuickJavaDoc)
+
+" show the problems view
+nmap <leader>tp <Action>(ActivateProblemsViewToolWindow)
+
+nmap <leader>tw <Action>(ActivateRunToolWindow)
